@@ -33,7 +33,7 @@ To run arbitary commands run:
 ### How to use the template
 
 - Clone the repo
-  - Remove the `.decontainer/ci.sh` and all the files refered in it if you don't want to use them.
+  - Remove the `.devcontainer/ci.sh` and all the files refered in it if you don't want to use them.
 - Download `JLink_Linux_V832_x86_64.deb` from the `Segger website` and place it in the `.devcontainer`
  directoy.
   - You can try this (might not work if the logic on the website changed):
