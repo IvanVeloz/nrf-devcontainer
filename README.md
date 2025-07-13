@@ -17,7 +17,7 @@ The image is around 14GB.<br>
 - `JLink`
   - if `"INSTALL_JLINK": "true"` is set the `"JLINK_PACKAGE_FILE": "JLink_Linux_V832_x86_64.deb"`
 file has to be
-available during build time in the `.decontainer` directory. If it is set to `false`
+available during build time in the `.devcontainer` directory. If it is set to `false`
 there will be dummy file created with the `initializeCommand`. Default is set to `false`.
 
 ### Commands
@@ -43,6 +43,7 @@ To run arbitary commands run:
         -o .devcontainer/JLink_Linux_V832_x86_64f.deb \
         "https://www.segger.com/downloads/jlink/JLink_Linux_V832_x86_64.deb"
         ```
+- Verify the download. Run: `md5sum --check JLink_Linux_V832_x86_64.deb.md5`.
 - Open the devcontainer in `VScode`
 
 Then run this commands for a quick test:
