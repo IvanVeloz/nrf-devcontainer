@@ -14,8 +14,13 @@
         "--device=/dev/ttyACM0:/dev/ttyACM0"
     ],
     "mounts": [
-        "type=bind,source=/dev/bus/usb,target=/dev/bus/usb"
+        "type=bind,source=/dev/bus/usb,target=/dev/bus/usb",
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
+        "source=${localEnv:SSH_AUTH_SOCK},target=/tmp/ssh-agent.sock,type=bind"
     ],
+    "containerEnv": {
+        "SSH_AUTH_SOCK": "/tmp/ssh-agent.sock"
+    },
     "initializeCommand": ".devcontainer/initializeCommand.sh",
     "postCreateCommand": ".devcontainer/postCreateCommand.sh",
     "postStartCommand": ".devcontainer/postStartCommand.sh",
