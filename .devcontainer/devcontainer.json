@@ -4,9 +4,10 @@
         "dockerfile": "./Dockerfile",
         "context": ".",
         "args": {
-            "NRF_TOOLCHAIN_VERSION": "v3.0.1",
-            "INSTALL_JLINK": "false",
-            "JLINK_PACKAGE_FILE": "JLink_Linux_V832_x86_64.deb"
+            "NRF_TOOLCHAIN_VERSION": "v3.0.2",
+            "INSTALL_JLINK": "true",
+            "JLINK_VERSION": "V850",
+            "JLINK_PACKAGE_FILE": "JLink_Linux_V850_x86_64.deb"
         }
     },
     "runArgs": [
