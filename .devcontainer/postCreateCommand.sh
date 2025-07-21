@@ -26,5 +26,6 @@ else
     fi
     # Configure Git to use the SSH key and enable signing
     git config --global user.signingkey /home/vscode/.ssh/id_ed25519.pub
-    git config --global commit.gpgSign true 
+    git config --global gpg.format ssh
+    git config --global commit.gpgsign true
 fi
